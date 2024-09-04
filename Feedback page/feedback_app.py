@@ -4,12 +4,10 @@ from io import BytesIO
 from PIL import Image
 from supabase import create_client, Client
 
-# Supabase setup
 url = "https://oapcmcmjmpwtujvlsmsb.supabase.co"
 key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9hcGNtY21qbXB3dHVqdmxzbXNiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjUzNjczMjMsImV4cCI6MjA0MDk0MzMyM30.49kGv7qHG8tdAr-Hreox0o4wK8LdkgmlHxbiVTVPVt8"  # Replace with your Supabase API key
 supabase: Client = create_client(url, key)
-
-st.title("Feedback and Painpoints")
+st.title("Feedback Page")
 
 def image_to_base64(image_file):
     buffered = BytesIO()
